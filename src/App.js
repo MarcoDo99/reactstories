@@ -27,16 +27,16 @@ const imgLogo = "https://bucketeer-b5a34af7-a090-456b-9309-1f290564647b.s3.amazo
   
   useEffect(async () => {
     
-    setData({logo: imgLogo, images: storyImgs});
-    //console.log("url", proxyUrl+queryParam);
-    // const response= await fetch(
+    // setData({logo: imgLogo, images: storyImgs});
+    // console.log("url", proxyUrl+queryParam);
+    const response= await fetch(
       
-    //    proxyUrl + queryParam
-    // );
-    //   const data = await response.json() 
-    //   console.log("useeffect", data)
+       proxyUrl + queryParam
+    );
+      const data = await response.json() 
+      console.log("useeffect", data)
       
-    //   setData(data);
+      setData(data);
   }, []);
 
   
