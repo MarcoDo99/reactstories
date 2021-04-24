@@ -1,0 +1,52 @@
+#bobbe-button-div {
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: 2vw;
+    bottom: 3vh;
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid red;
+    z-index: 1000;
+}
+#bobbe-button-img {
+    
+    border-radius:inherit;
+    min-width: 98%;
+    min-height: 98%;
+    width: 98%;
+    height: 98%;
+    max-width: 98%;
+    max-height: 98%;
+    
+}
+
+.bobbe-close {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    z-index: 99999
+  }
+  .bobbe-close:hover {
+    opacity: 1;
+  }
+  .bobbe-close:before, .bobbe-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: white;
+  }
+
+  .bobbe-close:before {
+    transform: rotate(45deg);
+  }
+  .bobbe-close:after {
+    transform: rotate(-45deg);
+  }
