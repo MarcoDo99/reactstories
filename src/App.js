@@ -21,8 +21,10 @@ const imgLogo = "https://bucketeer-b5a34af7-a090-456b-9309-1f290564647b.s3.amazo
     logo: "",
     images : [
       ""
-    ]
+    ],
+    enabled: false
   });
+  
   
   
   useEffect(async () => {
@@ -76,6 +78,7 @@ const imgLogo = "https://bucketeer-b5a34af7-a090-456b-9309-1f290564647b.s3.amazo
     let widthOfFrm = window.parent.document.getElementById("bobbe-webstory-iframe").style.width;
     
     return (
+      data.enabled &&
         <div>
           {isOpen && (
           <div>
